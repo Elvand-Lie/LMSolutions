@@ -3,9 +3,9 @@ import { CTABand } from "@/components/CTABand";
 import { Reveal } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "About — LM Solutions",
+  title: "About — Solaris Collective",
   description:
-    "A senior tech team that ships clean. We started LM because small businesses deserve custom software that actually fits.",
+    "A senior tech team that ships clean. We started Solaris Collective because small businesses deserve custom software that actually fits.",
 };
 
 const values = [
@@ -29,7 +29,7 @@ const values = [
 
 const team = [
   { initials: "EV", name: "Elvand", role: "Lead Developer" },
-  { initials: "LM", name: "LM", role: "Co-founder" },
+  { initials: "SC", name: "Solaris Collective", role: "Co-founder" },
 ];
 
 export default function AboutPage() {
@@ -38,13 +38,13 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-white pt-16 pb-20 md:pt-24 md:pb-28">
         <div className="container-lm max-w-3xl">
-          <p className="kicker mb-4">ABOUT LM</p>
+          <p className="kicker mb-4">ABOUT SOLARIS COLLECTIVE</p>
           <h1>
             A senior team that{" "}
             <span className="lime-accent">ships&nbsp;clean.</span>
           </h1>
           <p className="mt-5 text-lm-slate text-lg leading-relaxed">
-            We started LM because we kept seeing the same problem: small
+            We started Solaris Collective because we kept seeing the same problem: small
             businesses being sold software that didn&rsquo;t fit, by vendors
             that didn&rsquo;t listen. We built the team we wished existed —
             fast, transparent, and genuinely on your&nbsp;side.

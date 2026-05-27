@@ -247,10 +247,10 @@ export default function ContactPage() {
                   <p className="text-sm text-lm-slate leading-relaxed mb-6">
                     Drop us a line at{" "}
                     <a
-                      href="mailto:hello@lmsolutions.co"
+                      href="mailto:hello@solariscollective.com"
                       className="font-medium text-lm-charcoal hover:text-lm-lime-dark transition-colors"
                     >
-                      hello@lmsolutions.co
+                      hello@solariscollective.com
                     </a>{" "}
                     or book a 30-minute discovery call below. No prep needed —
                     just bring the rough&nbsp;idea.

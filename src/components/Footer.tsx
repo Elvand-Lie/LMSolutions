@@ -60,13 +60,13 @@ export function Footer() {
           {/* Logo & Tagline */}
           <div className="lg:col-span-4">
             <Link href="/" className="text-xl font-bold tracking-tight" style={{ color: "oklch(0.95 0.005 120)" }}>
-              LM<span style={{ color: "oklch(0.82 0.18 120)" }}>·</span>Solutions
+              Solaris Collective
             </Link>
             <p className="mt-3 text-sm leading-relaxed" style={{ color: "oklch(0.58 0.008 120)" }}>
               Custom digital products, built to&nbsp;ship.
             </p>
             <p className="mt-5 text-xs" style={{ color: "oklch(0.48 0.006 120)" }}>
-              hello@lmsolutions.co · Singapore
+              hello@solariscollective.com · Singapore
             </p>
           </div>
 
@@ -110,7 +110,7 @@ export function Footer() {
         {/* Bottom Strip */}
         <div className="mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTop: "1px solid oklch(0.26 0.010 120)" }}>
           <p className="text-xs" style={{ color: "oklch(0.42 0.005 120)" }}>
-            © 2026 LM Solutions. All rights reserved.
+            © 2026 SOLARIS COLLECTIVE PTE. LTD. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             {socialLinks.map((social) => {

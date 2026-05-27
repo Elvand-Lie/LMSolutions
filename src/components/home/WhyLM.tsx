@@ -24,7 +24,7 @@ export function WhyLM() {
   return (
     <Section padSize="lg">
       <SectionHeader
-        kicker="WHY TEAMS CHOOSE LM"
+        kicker="WHY TEAMS CHOOSE SOLARIS COLLECTIVE"
         headline="Builders, not gatekeepers."
         limeText="not gatekeepers."
       />

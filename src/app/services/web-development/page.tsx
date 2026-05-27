@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Web Development — LM Solutions",
+  title: "Web Development — Solaris Collective",
   description:
     "Marketing sites, web apps, and e-commerce — built on modern stacks, optimised for search, and easy for your team to update.",
 };

@@ -18,20 +18,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LM Solutions — Custom Websites, Apps, AI & Software for Growing Teams",
+  title: "Solaris Collective — Custom Websites, Apps, AI & Software for Growing Teams",
   description:
     "We design and ship custom digital products for SMEs and startups — websites, mobile apps, AI automation, and bespoke software. Fast turnaround, transparent pricing, code you own.",
   openGraph: {
-    title: "LM Solutions — Custom Websites, Apps, AI & Software for Growing Teams",
+    title: "Solaris Collective — Custom Websites, Apps, AI & Software for Growing Teams",
     description:
       "We design and ship custom digital products for SMEs and startups — websites, mobile apps, AI automation, and bespoke software. Fast turnaround, transparent pricing, code you own.",
     type: "website",
     locale: "en_SG",
-    siteName: "LM Solutions",
+    siteName: "Solaris Collective",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LM Solutions — Custom Websites, Apps, AI & Software for Growing Teams",
+    title: "Solaris Collective — Custom Websites, Apps, AI & Software for Growing Teams",
     description:
       "We design and ship custom digital products for SMEs and startups — websites, mobile apps, AI automation, and bespoke software. Fast turnaround, transparent pricing, code you own.",
   },

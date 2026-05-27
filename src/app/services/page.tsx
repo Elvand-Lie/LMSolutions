@@ -4,7 +4,7 @@ import { Code2, Sparkles, Globe, Smartphone } from "lucide-react";
 import { CTABand } from "@/components/CTABand";
 
 export const metadata: Metadata = {
-  title: "Services — LM Solutions",
+  title: "Services — Solaris Collective",
   description:
     "Custom software, AI & automation, web development, and mobile app development. See what we build for growing teams.",
 };

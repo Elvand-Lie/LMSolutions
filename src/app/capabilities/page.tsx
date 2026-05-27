@@ -3,7 +3,7 @@ import { CTABand } from "@/components/CTABand";
 import { Reveal } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Capabilities — LM Solutions",
+  title: "Capabilities — Solaris Collective",
   description:
     "Our tech stack and how we choose tools. Frontend, mobile, backend, and AI — every project gets the right stack, not the trendy one.",
 };

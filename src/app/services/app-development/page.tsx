@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "App Development — LM Solutions",
+  title: "App Development — Solaris Collective",
   description:
     "Native iOS, native Android, or cross-platform with React Native. We design, build, submit, and support your mobile app.",
 };

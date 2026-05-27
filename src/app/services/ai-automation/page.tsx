@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "AI & Automation — LM Solutions",
+  title: "AI & Automation — Solaris Collective",
   description:
     "Practical AI and automation workflows that remove repetitive work. Invoice processing, lead triage, document parsing, and custom AI integrations.",
 };

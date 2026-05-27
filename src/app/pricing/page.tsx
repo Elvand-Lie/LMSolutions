@@ -5,7 +5,7 @@ import { CTABand } from "@/components/CTABand";
 import { Reveal } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Pricing — LM Solutions",
+  title: "Pricing — Solaris Collective",
   description:
     "Clear pricing, no surprises. Indicative starting points for websites, custom software, AI automation, and mobile apps.",
 };

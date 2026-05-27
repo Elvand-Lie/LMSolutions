@@ -39,7 +39,7 @@ export function Header() {
       <div className="container-lm flex items-center justify-between h-16 md:h-[4.5rem]">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold tracking-tight text-lm-charcoal hover:opacity-80 transition-opacity duration-200">
-          LM<span style={{ color: "oklch(0.82 0.18 120)" }}>·</span>Solutions
+          Solaris Collective
         </Link>
 
         {/* Desktop Nav */}
