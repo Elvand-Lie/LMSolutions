@@ -61,7 +61,7 @@ export function Footer() {
           {/* Logo & Tagline */}
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block" style={{ color: "oklch(0.95 0.005 70)" }}>
-              <Image src="/logo.png" alt="Solaris Collective" width={200} height={40} className="h-8 w-auto brightness-0 invert" />
+              <Image src="/logo.png" alt="Solaris Collective" width={400} height={80} className="h-12 md:h-14 w-auto brightness-0 invert" />
             </Link>
             <p className="mt-3 text-sm leading-relaxed" style={{ color: "oklch(0.58 0.008 70)" }}>
               Custom digital products, built to&nbsp;ship.

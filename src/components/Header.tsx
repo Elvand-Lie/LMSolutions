@@ -40,7 +40,7 @@ export function Header() {
       <div className="container-lm flex items-center justify-between h-16 md:h-[4.5rem]">
         {/* Logo */}
         <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
-          <Image src="/logo.png" alt="Solaris Collective" width={200} height={40} className="h-8 w-auto" priority />
+          <Image src="/logo.png" alt="Solaris Collective" width={400} height={80} className="h-10 md:h-12 w-auto" priority />
         </Link>
 
         {/* Desktop Nav */}
