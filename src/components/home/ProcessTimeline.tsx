@@ -16,7 +16,7 @@ function TimelineLine() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <div ref={ref} className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px -translate-x-1/2 origin-top" style={{ background: "oklch(0.88 0.06 120)", transform: isInView ? "scaleY(1)" : "scaleY(0)", transition: "transform 1.2s cubic-bezier(0.16, 1, 0.3, 1)", transformOrigin: "top" }} />
+    <div ref={ref} className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px -translate-x-1/2 origin-top" style={{ background: "oklch(0.88 0.06 70)", transform: isInView ? "scaleY(1)" : "scaleY(0)", transition: "transform 1.2s cubic-bezier(0.16, 1, 0.3, 1)", transformOrigin: "top" }} />
   );
 }
 
@@ -29,7 +29,7 @@ function TimelineNode({ number, delay }: { number: string; delay: number }) {
       viewport={{ once: true, margin: "-60px" }}
       transition={{ type: "spring", duration: 0.5, bounce: 0, delay }}
     >
-      <div className="w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold tabular-nums" style={{ background: "oklch(0.82 0.18 120)", color: "oklch(0.22 0.015 120)", boxShadow: "0 0 0 6px var(--lm-bg), var(--shadow-md)" }}>
+      <div className="w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold tabular-nums" style={{ background: "oklch(0.82 0.18 70)", color: "oklch(0.22 0.015 70)", boxShadow: "0 0 0 6px var(--lm-bg), var(--shadow-md)" }}>
         {number}
       </div>
     </motion.div>

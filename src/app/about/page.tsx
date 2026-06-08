@@ -97,7 +97,7 @@ export default function AboutPage() {
             {team.map((member, i) => (
               <Reveal key={member.name} delay={i * 0.1}>
                 <div className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-lm-lime flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 rounded-full bg-lm-amber flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-xl font-bold">
                       {member.initials}
                     </span>

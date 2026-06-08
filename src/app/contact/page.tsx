@@ -89,7 +89,7 @@ export default function ContactPage() {
                     transition={{ type: "spring", duration: 0.45, bounce: 0 }}
                     className="p-8 bg-lm-card border border-lm-border rounded-xl text-center"
                   >
-                    <div className="w-14 h-14 rounded-full bg-lm-lime flex items-center justify-center mx-auto mb-4">
+                    <div className="w-14 h-14 rounded-full bg-lm-amber flex items-center justify-center mx-auto mb-4">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1F2937" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
@@ -102,7 +102,7 @@ export default function ContactPage() {
                     </p>
                     <Link
                       href="/capabilities"
-                      className="inline-flex items-center px-6 py-3 bg-lm-lime text-lm-charcoal font-semibold rounded-lg hover:bg-lm-lime-dark transition-colors duration-200"
+                      className="inline-flex items-center px-6 py-3 bg-lm-amber text-lm-charcoal font-semibold rounded-lg hover:bg-lm-amber-dark transition-colors duration-200"
                     >
                       See Our Capabilities
                     </Link>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                         id="name"
                         type="text"
                         {...register("name")}
-                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-lime focus:outline-none transition-colors"
+                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-amber focus:outline-none transition-colors"
                       />
                       {errors.name && (
                         <p className="mt-1 text-sm text-red-500" role="alert">{errors.name.message}</p>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                         id="company"
                         type="text"
                         {...register("company")}
-                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-lime focus:outline-none transition-colors"
+                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-amber focus:outline-none transition-colors"
                       />
                     </div>
 
@@ -164,7 +164,7 @@ export default function ContactPage() {
                         id="email"
                         type="email"
                         {...register("email")}
-                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-lime focus:outline-none transition-colors"
+                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-amber focus:outline-none transition-colors"
                       />
                       {errors.email && (
                         <p className="mt-1 text-sm text-red-500" role="alert">{errors.email.message}</p>
@@ -179,7 +179,7 @@ export default function ContactPage() {
                       <select
                         id="projectType"
                         {...register("projectType")}
-                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-lime focus:outline-none transition-colors appearance-none"
+                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-amber focus:outline-none transition-colors appearance-none"
                         defaultValue=""
                       >
                         <option value="" disabled>Select a project type</option>
@@ -200,7 +200,7 @@ export default function ContactPage() {
                       <select
                         id="budget"
                         {...register("budget")}
-                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-lime focus:outline-none transition-colors appearance-none"
+                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-amber focus:outline-none transition-colors appearance-none"
                         defaultValue=""
                       >
                         <option value="" disabled>Select a range (optional)</option>
@@ -220,7 +220,7 @@ export default function ContactPage() {
                         rows={6}
                         {...register("message")}
                         placeholder="What are you trying to build, and what's the goal? Don't worry about being technical — we'll figure out the details together."
-                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-lime focus:outline-none transition-colors resize-y placeholder:text-lm-muted"
+                        className="w-full px-3 py-3 bg-white border-[1.5px] border-lm-border rounded-md text-lm-charcoal focus:border-lm-amber focus:outline-none transition-colors resize-y placeholder:text-lm-muted"
                       />
                       {errors.message && (
                         <p className="mt-1 text-sm text-red-500" role="alert">{errors.message.message}</p>
@@ -230,7 +230,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full sm:w-auto px-8 py-3.5 bg-lm-lime text-lm-charcoal font-semibold rounded-lg hover:bg-lm-lime-dark transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="w-full sm:w-auto px-8 py-3.5 bg-lm-amber text-lm-charcoal font-semibold rounded-lg hover:bg-lm-amber-dark transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? "Sending..." : "Send Message"}
                     </button>
@@ -248,7 +248,7 @@ export default function ContactPage() {
                     Drop us a line at{" "}
                     <a
                       href="mailto:hello@solariscollective.com"
-                      className="font-medium text-lm-charcoal hover:text-lm-lime-dark transition-colors"
+                      className="font-medium text-lm-charcoal hover:text-lm-amber-dark transition-colors"
                     >
                       hello@solariscollective.com
                     </a>{" "}

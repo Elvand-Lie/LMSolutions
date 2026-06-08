@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -30,16 +31,16 @@ export function Header() {
     <header
       className="sticky top-0 z-50 transition-all duration-300"
       style={{
-        background: scrolled ? "oklch(0.985 0.004 120 / 0.92)" : "oklch(0.985 0.004 120 / 0.75)",
+        background: scrolled ? "oklch(0.985 0.004 70 / 0.92)" : "oklch(0.985 0.004 70 / 0.75)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
-        borderBottom: scrolled ? "1px solid oklch(0.90 0.01 120 / 0.6)" : "1px solid transparent",
+        borderBottom: scrolled ? "1px solid oklch(0.90 0.01 70 / 0.6)" : "1px solid transparent",
       }}
     >
       <div className="container-lm flex items-center justify-between h-16 md:h-[4.5rem]">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold tracking-tight text-lm-charcoal hover:opacity-80 transition-opacity duration-200">
-          Solaris Collective
+        <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
+          <Image src="/logo.png" alt="Solaris Collective" width={200} height={40} className="h-8 w-auto" priority />
         </Link>
 
         {/* Desktop Nav */}
@@ -54,7 +55,7 @@ export function Header() {
               >
                 {link.label}
                 {isActive && (
-                  <motion.span layoutId="nav-underline" className="absolute -bottom-1.5 left-0 right-0 h-[2px] rounded-full" style={{ background: "oklch(0.82 0.18 120)" }} transition={spring} />
+                  <motion.span layoutId="nav-underline" className="absolute -bottom-1.5 left-0 right-0 h-[2px] rounded-full" style={{ background: "oklch(0.82 0.18 70)" }} transition={spring} />
                 )}
               </Link>
             );
@@ -84,7 +85,7 @@ export function Header() {
                 const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
                 return (
                   <motion.div key={link.href} initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ ...spring, delay: i * 0.05 }}>
-                    <Link href={link.href} onClick={() => setMobileOpen(false)} className={`block py-3 px-3 text-base font-medium rounded-lg transition-colors ${isActive ? "text-lm-lime-dark bg-lm-lime-soft/50" : "text-lm-charcoal hover:bg-lm-bg-alt"}`}>
+                    <Link href={link.href} onClick={() => setMobileOpen(false)} className={`block py-3 px-3 text-base font-medium rounded-lg transition-colors ${isActive ? "text-lm-amber-dark bg-lm-amber-soft/50" : "text-lm-charcoal hover:bg-lm-bg-alt"}`}>
                       {link.label}
                     </Link>
                   </motion.div>

@@ -76,7 +76,7 @@ export default function CapabilitiesPage() {
                 {stack.badges.map((badge) => (
                   <span
                     key={badge}
-                    className="inline-flex items-center px-3.5 py-1.5 text-sm text-lm-charcoal bg-white border border-lm-border rounded-md hover:border-lm-lime-dark transition-colors duration-200"
+                    className="inline-flex items-center px-3.5 py-1.5 text-sm text-lm-charcoal bg-white border border-lm-border rounded-md hover:border-lm-amber-dark transition-colors duration-200"
                   >
                     {badge}
                   </span>

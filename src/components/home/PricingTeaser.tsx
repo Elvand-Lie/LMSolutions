@@ -50,7 +50,7 @@ export function PricingTeaser() {
           <Reveal key={tier.name} delay={i * 0.1}>
             <div className="relative h-full flex flex-col">
               {tier.badge && (
-                <span className="absolute -top-3.5 left-6 px-4 py-1.5 text-xs font-bold rounded-lg z-10" style={{ background: "oklch(0.82 0.18 120)", color: "oklch(0.22 0.015 120)" }}>
+                <span className="absolute -top-3.5 left-6 px-4 py-1.5 text-xs font-bold rounded-lg z-10" style={{ background: "oklch(0.82 0.18 70)", color: "oklch(0.22 0.015 70)" }}>
                   {tier.badge}
                 </span>
               )}
@@ -58,7 +58,7 @@ export function PricingTeaser() {
                 className={`flex-1 flex flex-col p-7 md:p-8 rounded-2xl transition-all duration-300 ${tier.highlighted ? "md:-translate-y-3" : "hover:-translate-y-1"}`}
                 style={{
                   background: "var(--lm-bg)",
-                  boxShadow: tier.highlighted ? "var(--shadow-lg), 0 0 0 2px oklch(0.82 0.18 120)" : "var(--shadow-sm)",
+                  boxShadow: tier.highlighted ? "var(--shadow-lg), 0 0 0 2px oklch(0.82 0.18 70)" : "var(--shadow-sm)",
                 }}
                 onMouseEnter={(e) => { if (!tier.highlighted) (e.currentTarget as HTMLElement).style.boxShadow = "var(--shadow-md)"; }}
                 onMouseLeave={(e) => { if (!tier.highlighted) (e.currentTarget as HTMLElement).style.boxShadow = "var(--shadow-sm)"; }}
@@ -70,7 +70,7 @@ export function PricingTeaser() {
                 <ul className="space-y-3 mb-8 flex-1">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2.5 text-sm text-lm-slate">
-                      <Check size={16} className="text-lm-lime-dark mt-0.5 shrink-0" />
+                      <Check size={16} className="text-lm-amber-dark mt-0.5 shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -87,7 +87,7 @@ export function PricingTeaser() {
 
       <Reveal delay={0.4}>
         <div className="mt-14 text-center">
-          <Link href="/pricing" className="group inline-flex items-center gap-2 text-sm font-medium text-lm-charcoal hover:text-lm-lime-dark transition-colors">
+          <Link href="/pricing" className="group inline-flex items-center gap-2 text-sm font-medium text-lm-charcoal hover:text-lm-amber-dark transition-colors">
             See full pricing breakdown
             <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-1" />
           </Link>

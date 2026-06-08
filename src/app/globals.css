@@ -5,23 +5,23 @@
 /* Color strategy: Committed (lime carries 30-60% of hero/CTA)  */
 :root {
   /* Primary: lime accent — committed strategy */
-  --lm-lime: oklch(0.82 0.18 120);
-  --lm-lime-dark: oklch(0.72 0.19 120);
-  --lm-lime-soft: oklch(0.94 0.06 120);
-  --lm-lime-glow: oklch(0.85 0.22 120 / 0.15);
-  --lm-lime-intense: oklch(0.78 0.20 120);
-  --lm-lime-hero: oklch(0.82 0.18 120 / 0.08);
+  --lm-amber: oklch(0.82 0.18 70);
+  --lm-amber-dark: oklch(0.72 0.19 70);
+  --lm-amber-soft: oklch(0.94 0.06 70);
+  --lm-amber-glow: oklch(0.85 0.22 70 / 0.15);
+  --lm-amber-intense: oklch(0.78 0.20 70);
+  --lm-amber-hero: oklch(0.82 0.18 70 / 0.08);
 
   /* Neutrals: tinted toward lime hue (120°) for cohesion */
-  --lm-charcoal: oklch(0.22 0.015 120);
-  --lm-slate: oklch(0.44 0.008 120);
-  --lm-muted: oklch(0.60 0.006 120);
+  --lm-charcoal: oklch(0.22 0.015 70);
+  --lm-slate: oklch(0.44 0.008 70);
+  --lm-muted: oklch(0.60 0.006 70);
 
   /* Surfaces — never pure white, tinted toward brand */
-  --lm-bg: oklch(0.985 0.004 120);
-  --lm-bg-alt: oklch(0.97 0.01 120);
-  --lm-card: oklch(0.96 0.015 120);
-  --lm-border: oklch(0.90 0.01 120);
+  --lm-bg: oklch(0.985 0.004 70);
+  --lm-bg-alt: oklch(0.97 0.01 70);
+  --lm-card: oklch(0.96 0.015 70);
+  --lm-border: oklch(0.90 0.01 70);
 
   /* Semantic */
   --lm-error: oklch(0.62 0.20 25);
@@ -49,29 +49,29 @@
 
   /* Elevation scale: Jakub-style multi-layer shadows */
   --shadow-sm:
-    0px 0px 0px 1px oklch(0.22 0.015 120 / 0.06),
-    0px 1px 2px -1px oklch(0.22 0.015 120 / 0.06),
-    0px 2px 4px 0px oklch(0.22 0.015 120 / 0.04);
+    0px 0px 0px 1px oklch(0.22 0.015 70 / 0.06),
+    0px 1px 2px -1px oklch(0.22 0.015 70 / 0.06),
+    0px 2px 4px 0px oklch(0.22 0.015 70 / 0.04);
   --shadow-md:
-    0px 0px 0px 1px oklch(0.22 0.015 120 / 0.05),
-    0px 2px 4px -1px oklch(0.22 0.015 120 / 0.06),
-    0px 6px 12px -2px oklch(0.22 0.015 120 / 0.06);
+    0px 0px 0px 1px oklch(0.22 0.015 70 / 0.05),
+    0px 2px 4px -1px oklch(0.22 0.015 70 / 0.06),
+    0px 6px 12px -2px oklch(0.22 0.015 70 / 0.06);
   --shadow-lg:
-    0px 0px 0px 1px oklch(0.22 0.015 120 / 0.04),
-    0px 4px 8px -2px oklch(0.22 0.015 120 / 0.06),
-    0px 12px 32px -4px oklch(0.22 0.015 120 / 0.08);
+    0px 0px 0px 1px oklch(0.22 0.015 70 / 0.04),
+    0px 4px 8px -2px oklch(0.22 0.015 70 / 0.06),
+    0px 12px 32px -4px oklch(0.22 0.015 70 / 0.08);
   --shadow-xl:
-    0px 0px 0px 1px oklch(0.22 0.015 120 / 0.04),
-    0px 8px 16px -4px oklch(0.22 0.015 120 / 0.08),
-    0px 24px 48px -8px oklch(0.22 0.015 120 / 0.10);
+    0px 0px 0px 1px oklch(0.22 0.015 70 / 0.04),
+    0px 8px 16px -4px oklch(0.22 0.015 70 / 0.08),
+    0px 24px 48px -8px oklch(0.22 0.015 70 / 0.10);
 }
 
 @theme inline {
-  --color-lm-lime: var(--lm-lime);
-  --color-lm-lime-dark: var(--lm-lime-dark);
-  --color-lm-lime-soft: var(--lm-lime-soft);
-  --color-lm-lime-glow: var(--lm-lime-glow);
-  --color-lm-lime-intense: var(--lm-lime-intense);
+  --color-lm-amber: var(--lm-amber);
+  --color-lm-amber-dark: var(--lm-amber-dark);
+  --color-lm-amber-soft: var(--lm-amber-soft);
+  --color-lm-amber-glow: var(--lm-amber-glow);
+  --color-lm-amber-intense: var(--lm-amber-intense);
   --color-lm-charcoal: var(--lm-charcoal);
   --color-lm-slate: var(--lm-slate);
   --color-lm-muted: var(--lm-muted);
@@ -146,13 +146,13 @@ article p, .prose p {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-weight: 600;
-  color: var(--lm-lime-dark);
+  color: var(--lm-amber-dark);
   font-family: var(--font-mono), monospace;
 }
 
 /* ── Lime Accent Text ── */
 .lime-accent {
-  color: var(--lm-lime-dark);
+  color: var(--lm-amber-dark);
 }
 
 /* ── Section Padding (varied rhythm — generous separations) ──── */
@@ -185,14 +185,14 @@ article p, .prose p {
 
 /* ── Focus Styles ── */
 *:focus-visible {
-  outline: 2px solid var(--lm-lime);
+  outline: 2px solid var(--lm-amber);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
 /* ── Selection ── */
 ::selection {
-  background: var(--lm-lime-soft);
+  background: var(--lm-amber-soft);
   color: var(--lm-charcoal);
 }
 
@@ -207,7 +207,7 @@ article p, .prose p {
   font-size: 0.9375rem;
   letter-spacing: -0.01em;
   border-radius: 0.625rem;
-  background: var(--lm-lime);
+  background: var(--lm-amber);
   color: var(--lm-charcoal);
   box-shadow: var(--shadow-sm), inset 0 1px 0 oklch(1 0 0 / 0.15);
   transition:
@@ -219,9 +219,9 @@ article p, .prose p {
 }
 
 .btn-primary:hover {
-  background: var(--lm-lime-dark);
+  background: var(--lm-amber-dark);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md), 0 8px 24px var(--lm-lime-glow);
+  box-shadow: var(--shadow-md), 0 8px 24px var(--lm-amber-glow);
 }
 
 .btn-primary:active {
@@ -252,8 +252,8 @@ article p, .prose p {
 }
 
 .btn-secondary:hover {
-  border-color: var(--lm-lime-dark);
-  color: var(--lm-lime-dark);
+  border-color: var(--lm-amber-dark);
+  color: var(--lm-amber-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
@@ -282,22 +282,22 @@ article p, .prose p {
 
 /* ── Footer link hover (CSS-only, no inline JS) ── */
 .footer-link {
-  color: oklch(0.70 0.005 120);
+  color: oklch(0.70 0.005 70);
   transition: color var(--dur-fast) var(--ease-out-quart);
 }
 .footer-link:hover {
-  color: var(--lm-lime);
+  color: var(--lm-amber);
 }
 
 /* ── Social icon hover ── */
 .social-icon {
-  color: oklch(0.50 0.006 120);
+  color: oklch(0.50 0.006 70);
   transition:
     color var(--dur-fast) var(--ease-out-quart),
     transform var(--dur-fast) var(--ease-out-quart);
 }
 .social-icon:hover {
-  color: var(--lm-lime);
+  color: var(--lm-amber);
   transform: scale(1.12);
 }
 

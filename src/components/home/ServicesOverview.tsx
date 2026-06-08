@@ -53,7 +53,7 @@ export function ServicesOverview() {
             <div
               className="relative overflow-hidden rounded-2xl p-8 md:p-10 lg:p-12 transition-all duration-300"
               style={{
-                background: "linear-gradient(135deg, oklch(0.97 0.02 120), oklch(0.99 0.005 120))",
+                background: "linear-gradient(135deg, oklch(0.97 0.02 70), oklch(0.99 0.005 70))",
                 boxShadow: "var(--shadow-sm)",
               }}
             >
@@ -61,7 +61,7 @@ export function ServicesOverview() {
                 <div>
                   <span
                     className="block text-5xl font-bold mb-4 tabular-nums"
-                    style={{ color: "oklch(0.82 0.18 120 / 0.35)" }}
+                    style={{ color: "oklch(0.82 0.18 70 / 0.35)" }}
                   >
                     {services[0].number}
                   </span>
@@ -71,7 +71,7 @@ export function ServicesOverview() {
                   </p>
                 </div>
                 <div className="flex md:justify-end">
-                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-lm-charcoal group-hover:text-lm-lime-dark transition-colors duration-200">
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-lm-charcoal group-hover:text-lm-amber-dark transition-colors duration-200">
                     Learn more
                     <ArrowRight
                       size={16}
@@ -106,7 +106,7 @@ export function ServicesOverview() {
               >
                 <span
                   className="block text-4xl font-bold mb-4 tabular-nums"
-                  style={{ color: "oklch(0.82 0.18 120 / 0.30)" }}
+                  style={{ color: "oklch(0.82 0.18 70 / 0.30)" }}
                 >
                   {services[1].number}
                 </span>
@@ -114,7 +114,7 @@ export function ServicesOverview() {
                 <p className="text-sm text-lm-slate leading-relaxed mb-5">
                   {services[1].description}
                 </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-lm-charcoal group-hover:text-lm-lime-dark transition-colors duration-200">
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-lm-charcoal group-hover:text-lm-amber-dark transition-colors duration-200">
                   Learn more
                   <ArrowRight
                     size={14}
@@ -138,7 +138,7 @@ export function ServicesOverview() {
               >
                 <span
                   className="block text-4xl font-bold mb-4 tabular-nums"
-                  style={{ color: "oklch(0.82 0.18 120 / 0.30)" }}
+                  style={{ color: "oklch(0.82 0.18 70 / 0.30)" }}
                 >
                   {services[2].number}
                 </span>
@@ -146,7 +146,7 @@ export function ServicesOverview() {
                 <p className="text-sm text-lm-slate leading-relaxed mb-5">
                   {services[2].description}
                 </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-lm-charcoal group-hover:text-lm-lime-dark transition-colors duration-200">
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-lm-charcoal group-hover:text-lm-amber-dark transition-colors duration-200">
                   Learn more
                   <ArrowRight
                     size={14}
@@ -172,7 +172,7 @@ export function ServicesOverview() {
                 <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-4 md:gap-8 items-center">
                   <span
                     className="text-4xl font-bold tabular-nums"
-                    style={{ color: "oklch(0.82 0.18 120 / 0.30)" }}
+                    style={{ color: "oklch(0.82 0.18 70 / 0.30)" }}
                   >
                     {services[3].number}
                   </span>
@@ -182,7 +182,7 @@ export function ServicesOverview() {
                       {services[3].description}
                     </p>
                   </div>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-lm-charcoal group-hover:text-lm-lime-dark transition-colors duration-200">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-lm-charcoal group-hover:text-lm-amber-dark transition-colors duration-200">
                     Learn more
                     <ArrowRight
                       size={14}

@@ -63,7 +63,7 @@ export default function ServicesPage() {
             const Icon = service.icon;
             return (
               <Link key={service.href} href={service.href} className="group block">
-                <div className="h-full p-8 bg-white border border-lm-border rounded-xl hover:border-lm-lime-dark hover:-translate-y-0.5 transition-all duration-200">
+                <div className="h-full p-8 bg-white border border-lm-border rounded-xl hover:border-lm-amber-dark hover:-translate-y-0.5 transition-all duration-200">
                   <div className="w-14 h-14 rounded-lg bg-lm-card flex items-center justify-center mb-6">
                     <Icon size={28} className="text-lm-charcoal" strokeWidth={1.5} />
                   </div>
@@ -71,7 +71,7 @@ export default function ServicesPage() {
                   <p className="text-lm-slate leading-relaxed mb-4">
                     {service.description}
                   </p>
-                  <span className="text-sm font-semibold text-lm-charcoal group-hover:text-lm-lime-dark transition-colors inline-flex items-center gap-1">
+                  <span className="text-sm font-semibold text-lm-charcoal group-hover:text-lm-amber-dark transition-colors inline-flex items-center gap-1">
                     Learn more
                     <span className="transition-transform group-hover:translate-x-1">→</span>
                   </span>

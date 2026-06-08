@@ -13,9 +13,9 @@ export function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background: [
-            "radial-gradient(ellipse 80% 60% at 70% 10%, oklch(0.88 0.14 120 / 0.30), transparent 65%)",
-            "radial-gradient(ellipse 50% 70% at 5% 85%, oklch(0.92 0.08 120 / 0.18), transparent 55%)",
-            "radial-gradient(ellipse 35% 40% at 90% 70%, oklch(0.86 0.10 120 / 0.12), transparent 50%)",
+            "radial-gradient(ellipse 80% 60% at 70% 10%, oklch(0.88 0.14 70 / 0.30), transparent 65%)",
+            "radial-gradient(ellipse 50% 70% at 5% 85%, oklch(0.92 0.08 70 / 0.18), transparent 55%)",
+            "radial-gradient(ellipse 35% 40% at 90% 70%, oklch(0.86 0.10 70 / 0.12), transparent 50%)",
           ].join(", "),
         }}
       />
@@ -96,7 +96,7 @@ export function Hero() {
                 className="absolute -inset-6 rounded-3xl opacity-60"
                 style={{
                   background:
-                    "radial-gradient(ellipse at center, oklch(0.82 0.18 120 / 0.20), transparent 70%)",
+                    "radial-gradient(ellipse at center, oklch(0.82 0.18 70 / 0.20), transparent 70%)",
                 }}
               />
 
@@ -104,7 +104,7 @@ export function Hero() {
               <div
                 className="relative rounded-2xl overflow-hidden"
                 style={{
-                  background: "oklch(0.18 0.015 120)",
+                  background: "oklch(0.18 0.015 70)",
                   boxShadow: "var(--shadow-xl)",
                 }}
               >
@@ -112,7 +112,7 @@ export function Hero() {
                 <div
                   className="flex items-center gap-2 px-5 py-3.5"
                   style={{
-                    borderBottom: "1px solid oklch(0.26 0.012 120)",
+                    borderBottom: "1px solid oklch(0.26 0.012 70)",
                   }}
                 >
                   <div className="flex gap-2">
@@ -131,7 +131,7 @@ export function Hero() {
                   </div>
                   <span
                     className="ml-3 text-xs font-mono"
-                    style={{ color: "oklch(0.50 0.008 120)" }}
+                    style={{ color: "oklch(0.50 0.008 70)" }}
                   >
                     your-project.tsx
                   </span>
@@ -141,51 +141,51 @@ export function Hero() {
                 <div className="px-5 py-5 space-y-2 font-mono text-[13px] leading-relaxed">
                   <div className="code-line" style={{ "--line-index": 0 } as React.CSSProperties}>
                     <span style={{ color: "oklch(0.60 0.15 300)" }}>import</span>
-                    <span style={{ color: "oklch(0.75 0.005 120)" }}>{" { deploy }"}</span>
+                    <span style={{ color: "oklch(0.75 0.005 70)" }}>{" { deploy }"}</span>
                     <span style={{ color: "oklch(0.60 0.15 300)" }}> from</span>
                     <span style={{ color: "oklch(0.72 0.14 140)" }}>{" '@lm/core'"}</span>
                   </div>
                   <div className="code-line" style={{ "--line-index": 1 } as React.CSSProperties}>
-                    <span style={{ color: "oklch(0.45 0.006 120)" }} />
+                    <span style={{ color: "oklch(0.45 0.006 70)" }} />
                   </div>
                   <div className="code-line" style={{ "--line-index": 2 } as React.CSSProperties}>
                     <span style={{ color: "oklch(0.60 0.15 300)" }}>const</span>
-                    <span style={{ color: "oklch(0.82 0.18 120)" }}> app</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}> = </span>
+                    <span style={{ color: "oklch(0.82 0.18 70)" }}> app</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}> = </span>
                     <span style={{ color: "oklch(0.68 0.12 200)" }}>configure</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>{"({"}</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>{"({"}</span>
                   </div>
                   <div className="code-line" style={{ "--line-index": 3 } as React.CSSProperties}>
-                    <span style={{ color: "oklch(0.75 0.005 120)" }}>{"  stack"}</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>: </span>
+                    <span style={{ color: "oklch(0.75 0.005 70)" }}>{"  stack"}</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>: </span>
                     <span style={{ color: "oklch(0.72 0.14 140)" }}>{'"next + ai"'}</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>,</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>,</span>
                   </div>
                   <div className="code-line" style={{ "--line-index": 4 } as React.CSSProperties}>
-                    <span style={{ color: "oklch(0.75 0.005 120)" }}>{"  speed"}</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>: </span>
+                    <span style={{ color: "oklch(0.75 0.005 70)" }}>{"  speed"}</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>: </span>
                     <span style={{ color: "oklch(0.72 0.14 140)" }}>{'"fast"'}</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>,</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>,</span>
                   </div>
                   <div className="code-line" style={{ "--line-index": 5 } as React.CSSProperties}>
-                    <span style={{ color: "oklch(0.75 0.005 120)" }}>{"  quality"}</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>: </span>
+                    <span style={{ color: "oklch(0.75 0.005 70)" }}>{"  quality"}</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>: </span>
                     <span style={{ color: "oklch(0.72 0.14 140)" }}>{'"production"'}</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>,</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>,</span>
                   </div>
                   <div className="code-line" style={{ "--line-index": 6 } as React.CSSProperties}>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>{"}"}</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>)</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>{"}"}</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>)</span>
                   </div>
                   <div className="code-line" style={{ "--line-index": 7 } as React.CSSProperties}>
-                    <span style={{ color: "oklch(0.45 0.006 120)" }} />
+                    <span style={{ color: "oklch(0.45 0.006 70)" }} />
                   </div>
                   <div className="code-line" style={{ "--line-index": 8 } as React.CSSProperties}>
                     <span style={{ color: "oklch(0.60 0.15 300)" }}>await</span>
-                    <span style={{ color: "oklch(0.82 0.18 120)" }}> deploy</span>
-                    <span style={{ color: "oklch(0.60 0.005 120)" }}>(app)</span>
-                    <span style={{ color: "oklch(0.45 0.006 120)" }}> </span>
-                    <span style={{ color: "oklch(0.45 0.012 120)" }}>// ships in weeks</span>
+                    <span style={{ color: "oklch(0.82 0.18 70)" }}> deploy</span>
+                    <span style={{ color: "oklch(0.60 0.005 70)" }}>(app)</span>
+                    <span style={{ color: "oklch(0.45 0.006 70)" }}> </span>
+                    <span style={{ color: "oklch(0.45 0.012 70)" }}>// ships in weeks</span>
                   </div>
                 </div>
 
@@ -193,8 +193,8 @@ export function Hero() {
                 <div
                   className="flex items-center justify-between px-5 py-2 text-[11px]"
                   style={{
-                    borderTop: "1px solid oklch(0.26 0.012 120)",
-                    color: "oklch(0.45 0.006 120)",
+                    borderTop: "1px solid oklch(0.26 0.012 70)",
+                    color: "oklch(0.45 0.006 70)",
                   }}
                 >
                   <span>TypeScript</span>

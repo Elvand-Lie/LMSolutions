@@ -42,14 +42,14 @@ export function Capabilities() {
             <div className={`flex flex-col md:flex-row gap-6 md:gap-14 items-start ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
               <div className="md:w-2/5 shrink-0">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className={`inline-block ${ruleWidths[i]} h-0.5 rounded-full`} style={{ background: "oklch(0.82 0.18 120)" }} />
+                  <span className={`inline-block ${ruleWidths[i]} h-0.5 rounded-full`} style={{ background: "oklch(0.82 0.18 70)" }} />
                   <h3 className="text-xl font-bold">{cap.heading}</h3>
                 </div>
                 <p className="text-lm-slate leading-relaxed">{cap.description}</p>
               </div>
               <div className="md:flex-1 flex flex-wrap gap-2.5">
                 {cap.badges.map((badge) => (
-                  <span key={badge} className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg cursor-default transition-all duration-200 hover:-translate-y-px" style={{ background: "oklch(0.97 0.01 120)", boxShadow: "var(--shadow-sm)", color: "oklch(0.28 0.015 120)" }}>
+                  <span key={badge} className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg cursor-default transition-all duration-200 hover:-translate-y-px" style={{ background: "oklch(0.97 0.01 70)", boxShadow: "var(--shadow-sm)", color: "oklch(0.28 0.015 70)" }}>
                     {badge}
                   </span>
                 ))}

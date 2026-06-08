@@ -83,7 +83,7 @@ function FeatureCell({ value }: { value: boolean | string }) {
     return <span className="text-sm text-lm-slate">{value}</span>;
   }
   return value ? (
-    <Check size={18} className="text-lm-lime-dark mx-auto" />
+    <Check size={18} className="text-lm-amber-dark mx-auto" />
   ) : (
     <Minus size={18} className="text-lm-muted/40 mx-auto" />
   );
@@ -116,15 +116,15 @@ export default function PricingPage() {
               <Reveal key={tier.name} delay={i * 0.1}>
                 <div className="relative h-full flex flex-col">
                   {tier.badge && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-lm-lime text-lm-charcoal text-xs font-semibold rounded-md z-10">
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-lm-amber text-lm-charcoal text-xs font-semibold rounded-md z-10">
                       {tier.badge}
                     </span>
                   )}
                   <div
                     className={`flex-1 flex flex-col p-7 rounded-xl border-2 transition-colors duration-200 ${
                       tier.highlighted
-                        ? "border-lm-lime bg-white"
-                        : "border-lm-border bg-white hover:border-lm-lime/40"
+                        ? "border-lm-amber bg-white"
+                        : "border-lm-border bg-white hover:border-lm-amber/40"
                     }`}
                   >
                     <h3 className="text-xl font-bold mb-1">{tier.name}</h3>
@@ -133,7 +133,7 @@ export default function PricingPage() {
                     <ul className="space-y-3 mb-8 flex-1">
                       {tier.features.map((feature) => (
                         <li key={feature} className="flex items-start gap-2.5 text-sm text-lm-slate">
-                          <Check size={16} className="text-lm-lime-dark mt-0.5 shrink-0" />
+                          <Check size={16} className="text-lm-amber-dark mt-0.5 shrink-0" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -142,8 +142,8 @@ export default function PricingPage() {
                       href={tier.buttonHref}
                       className={`inline-flex items-center justify-center w-full py-3.5 font-semibold text-sm rounded-lg transition-colors duration-200 ${
                         tier.highlighted
-                          ? "bg-lm-lime text-lm-charcoal hover:bg-lm-lime-dark"
-                          : "bg-white text-lm-charcoal border-[1.5px] border-lm-charcoal hover:border-lm-lime-dark"
+                          ? "bg-lm-amber text-lm-charcoal hover:bg-lm-amber-dark"
+                          : "bg-white text-lm-charcoal border-[1.5px] border-lm-charcoal hover:border-lm-amber-dark"
                       }`}
                     >
                       {tier.buttonText}

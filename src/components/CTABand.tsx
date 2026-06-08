@@ -6,7 +6,7 @@ import { Reveal } from "./Section";
 
 export function CTABand() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "oklch(0.82 0.18 120)" }}>
+    <section className="relative overflow-hidden" style={{ background: "oklch(0.82 0.18 70)" }}>
       {/* Subtle grain overlay */}
       <div className="grain absolute inset-0" />
 
@@ -15,8 +15,8 @@ export function CTABand() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background: [
-            "radial-gradient(ellipse 60% 100% at 80% 0%, oklch(0.88 0.22 120 / 0.4), transparent 60%)",
-            "radial-gradient(ellipse 40% 80% at 15% 100%, oklch(0.72 0.19 120 / 0.3), transparent 50%)",
+            "radial-gradient(ellipse 60% 100% at 80% 0%, oklch(0.88 0.22 70 / 0.4), transparent 60%)",
+            "radial-gradient(ellipse 40% 80% at 15% 100%, oklch(0.72 0.19 70 / 0.3), transparent 50%)",
           ].join(", "),
         }}
       />

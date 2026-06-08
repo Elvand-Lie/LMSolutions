@@ -33,7 +33,7 @@ export function WhyLM() {
         {reasons.map((reason, i) => (
           <Reveal key={reason.title} delay={i * 0.1}>
             <div className="p-8 md:p-10 h-full rounded-2xl" style={{ background: "var(--lm-bg-alt)" }}>
-              <span className="block text-5xl md:text-6xl font-extrabold mb-5 tabular-nums" style={{ color: "oklch(0.82 0.18 120 / 0.25)", letterSpacing: "-0.03em" }}>
+              <span className="block text-5xl md:text-6xl font-extrabold mb-5 tabular-nums" style={{ color: "oklch(0.82 0.18 70 / 0.25)", letterSpacing: "-0.03em" }}>
                 {reason.number}
               </span>
               <h3 className="text-lg font-bold mb-3">{reason.title}</h3>

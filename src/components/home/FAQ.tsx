@@ -18,7 +18,7 @@ function FAQItem({ faq, isOpen, onToggle }: { faq: (typeof faqs)[0]; isOpen: boo
   return (
     <div style={{ borderBottom: "1px solid var(--lm-border)" }}>
       <button className="w-full flex items-center justify-between py-6 text-left group" onClick={onToggle} aria-expanded={isOpen}>
-        <span className="text-base font-semibold text-lm-charcoal pr-4 group-hover:text-lm-lime-dark transition-colors duration-200">{faq.question}</span>
+        <span className="text-base font-semibold text-lm-charcoal pr-4 group-hover:text-lm-amber-dark transition-colors duration-200">{faq.question}</span>
         <motion.span animate={{ rotate: isOpen ? 180 : 0 }} transition={{ type: "spring", duration: 0.35, bounce: 0 }} className="shrink-0 text-lm-muted">
           <ChevronDown size={20} />
         </motion.span>

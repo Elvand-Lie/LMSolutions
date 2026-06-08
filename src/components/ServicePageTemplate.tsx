@@ -43,13 +43,13 @@ export function ServicePageTemplate({
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-7 py-3.5 bg-lm-lime text-lm-charcoal font-semibold rounded-lg hover:bg-lm-lime-dark transition-colors duration-200"
+              className="inline-flex items-center justify-center px-7 py-3.5 bg-lm-amber text-lm-charcoal font-semibold rounded-lg hover:bg-lm-amber-dark transition-colors duration-200"
             >
               Get a Quote
             </Link>
             <Link
               href="/pricing"
-              className="inline-flex items-center justify-center px-7 py-3.5 bg-white text-lm-charcoal font-semibold rounded-lg border-[1.5px] border-lm-charcoal hover:border-lm-lime-dark transition-colors duration-200"
+              className="inline-flex items-center justify-center px-7 py-3.5 bg-white text-lm-charcoal font-semibold rounded-lg border-[1.5px] border-lm-charcoal hover:border-lm-amber-dark transition-colors duration-200"
             >
               See Pricing
             </Link>
@@ -65,7 +65,7 @@ export function ServicePageTemplate({
             <ul className="space-y-4">
               {includes.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-lm-slate">
-                  <Check size={18} className="text-lm-lime-dark mt-1 shrink-0" />
+                  <Check size={18} className="text-lm-amber-dark mt-1 shrink-0" />
                   <span className="leading-relaxed">{item}</span>
                 </li>
               ))}
@@ -93,7 +93,7 @@ export function ServicePageTemplate({
               {techBadges.map((badge) => (
                 <span
                   key={badge}
-                  className="inline-flex items-center px-3.5 py-1.5 text-sm text-lm-charcoal bg-white border border-lm-border rounded-md hover:border-lm-lime-dark transition-colors duration-200"
+                  className="inline-flex items-center px-3.5 py-1.5 text-sm text-lm-charcoal bg-white border border-lm-border rounded-md hover:border-lm-amber-dark transition-colors duration-200"
                 >
                   {badge}
                 </span>
@@ -112,7 +112,7 @@ export function ServicePageTemplate({
               <p className="text-lm-slate">{pricingNote}</p>
               <Link
                 href="/pricing"
-                className="mt-4 inline-flex text-sm font-medium text-lm-charcoal hover:text-lm-lime-dark transition-colors items-center gap-1 group"
+                className="mt-4 inline-flex text-sm font-medium text-lm-charcoal hover:text-lm-amber-dark transition-colors items-center gap-1 group"
               >
                 See full pricing breakdown
                 <span className="transition-transform group-hover:translate-x-1">→</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 /* Social icons — inline SVGs */
 function LinkedInIcon({ size = 18 }: { size?: number }) {
@@ -54,25 +55,25 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer style={{ background: "oklch(0.16 0.015 120)" }}>
+    <footer style={{ background: "oklch(0.16 0.015 70)" }}>
       <div className="container-lm pt-16 pb-8 md:pt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Logo & Tagline */}
           <div className="lg:col-span-4">
-            <Link href="/" className="text-xl font-bold tracking-tight" style={{ color: "oklch(0.95 0.005 120)" }}>
-              Solaris Collective
+            <Link href="/" className="inline-block" style={{ color: "oklch(0.95 0.005 70)" }}>
+              <Image src="/logo.png" alt="Solaris Collective" width={200} height={40} className="h-8 w-auto brightness-0 invert" />
             </Link>
-            <p className="mt-3 text-sm leading-relaxed" style={{ color: "oklch(0.58 0.008 120)" }}>
+            <p className="mt-3 text-sm leading-relaxed" style={{ color: "oklch(0.58 0.008 70)" }}>
               Custom digital products, built to&nbsp;ship.
             </p>
-            <p className="mt-5 text-xs" style={{ color: "oklch(0.48 0.006 120)" }}>
+            <p className="mt-5 text-xs" style={{ color: "oklch(0.48 0.006 70)" }}>
               hello@solariscollective.com · Singapore
             </p>
           </div>
 
           {/* Services */}
           <div className="lg:col-span-3">
-            <h4 className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "oklch(0.50 0.006 120)" }}>Services</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "oklch(0.50 0.006 70)" }}>Services</h4>
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
@@ -84,7 +85,7 @@ export function Footer() {
 
           {/* Company */}
           <div className="lg:col-span-2">
-            <h4 className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "oklch(0.50 0.006 120)" }}>Company</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "oklch(0.50 0.006 70)" }}>Company</h4>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.href}>
@@ -96,7 +97,7 @@ export function Footer() {
 
           {/* Legal */}
           <div className="lg:col-span-3">
-            <h4 className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "oklch(0.50 0.006 120)" }}>Legal</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "oklch(0.50 0.006 70)" }}>Legal</h4>
             <ul className="space-y-3">
               {legalLinks.map((link) => (
                 <li key={link.href}>
@@ -108,8 +109,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Strip */}
-        <div className="mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTop: "1px solid oklch(0.26 0.010 120)" }}>
-          <p className="text-xs" style={{ color: "oklch(0.42 0.005 120)" }}>
+        <div className="mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTop: "1px solid oklch(0.26 0.010 70)" }}>
+          <p className="text-xs" style={{ color: "oklch(0.42 0.005 70)" }}>
             © 2026 SOLARIS COLLECTIVE PTE. LTD. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
